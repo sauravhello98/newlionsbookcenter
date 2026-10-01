@@ -23,7 +23,14 @@ export default function Home() {
       {/* Navbar */}
       <nav className="flex justify-between items-center p-6 bg-white text-yellow-400 sticky top-0 z-20">
         <div className="flex items-center space-x-3">
-          <Image src="/globe.svg" alt="Logo" width={40} height={40} className="drop-shadow-lg" />
+          <Image
+            src="/logo.jpeg"
+            alt="New Lions Book Center Logo"
+            width={48}
+            height={48}
+            className="object-contain rounded-md"
+            priority
+          />
           <span className="text-2xl font-extrabold tracking-tight">New Lion Books Store</span>
         </div>
         <ul className="flex space-x-8 text-lg font-medium">
