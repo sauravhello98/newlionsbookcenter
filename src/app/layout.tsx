@@ -1,20 +1,10 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
-
 export const metadata: Metadata = {
-  title: "New Lions Book Center",
-  description: "Janakpur's premier bookstore offering books, stationery, and academic supplies.",
+  title: "New Lions Book Center | Books & Stationery Janakpurdham",
+  description:
+    "A Legacy of Learning Since 2052 BS. School books, college books, quality stationery, wholesale & retail in Janakpurdham, Nepal.",
   icons: {
     icon: "/logo.jpeg",
     apple: "/logo.jpeg",
@@ -27,14 +17,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="scroll-smooth">
       <head>
         <link rel="icon" href="/logo.jpeg" sizes="any" />
         <link rel="apple-touch-icon" href="/logo.jpeg" />
       </head>
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      <body className="antialiased bg-white text-slate-800">
         {children}
       </body>
     </html>
